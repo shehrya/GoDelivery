@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:padding="15dp"
+    android:background="@drawable/main_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <TextView
+            android:id="@+id/UserTypetitleTextID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="What would you like to do?"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+
+        <Button
+            android:id="@+id/UserTypeSubmitJobButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Submit a Job"
+            android:textSize="20dp"
+            android:onClick="ClientButtonClicked"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/custom_button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/UserTypeCarryJobButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Carry a Job"
+            android:textSize="20dp"
+            android:onClick="DeliveryButtonClicked"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/custom_button"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
